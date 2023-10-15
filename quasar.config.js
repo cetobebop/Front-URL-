@@ -64,7 +64,9 @@ module.exports = configure(function (ctx) {
       // analyze: true,
       env: {
         URL_SERVER: ctx.dev ? "http://localhost:5000/api/v1" : "",
-        URL_FRONT: ctx.dev ? "http://localhost:9000" : "",
+        URL_FRONT: ctx.dev
+          ? "http://localhost:9000"
+          : "https://front-url.onrender.com",
       },
       // rawDefine: {}
       // ignorePublicFolder: true,
